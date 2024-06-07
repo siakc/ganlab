@@ -22,6 +22,23 @@
 
   <title>GAN Lab: Play with Generative Adversarial Networks in Your Browser!</title>
   <style>
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .column {
+      flex: 50%;
+      padding: 0 4px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+    
     html {
       width: 100%;
       height: 100%;
@@ -173,18 +190,27 @@
       margin-top: 0px;
       padding: 20px 10px 0 110px;
     }
+
+    #logo {
+      max-width: 500px;
+      max-height: 80px;
+      width: auto;
+      height: auto;
+      display: block;
+    }
   </style>
 </head>
 
 <body>
   <div id="top-bar">
+    <img id="logo" src="images/fromatoi2.png"/>
     <div id="top-bar-panel-container" class="panel-container">
       <div id="tool-description">
         Play with Generative Adversarial Networks (GANs) in your browser!          
       </div>
       <div id="source-link">
         <a href="https://github.com/poloclub/ganlab" title="Source on GitHub">
-          Fork us on GitHub&nbsp;
+          Fork this project on GitHub&nbsp;
           <img src="images/github-mark.png" />
         </a>
       </div>
@@ -201,6 +227,11 @@
   </div>
 
   <div id="description">
+    <h2>What do we do?</h2>
+    <p>
+      We try to make AI technologies such as machine learning usable by everybody. We focus a bit on image creation because it is fun way of learning. You can easily use Stable Diffusion tools such as <a href="https://github.com/easydiffusion/easydiffusion" title="Easy Diffuison">Easy Diffuison</a> or other ones to play with trained models. You can advance by training your own models. We can see some of the abstract pictures created by Stable Diffusion at the bottom. We start by fundamentals using a tutorial made by GANLab people.
+    </p>
+
     <h2>What is a GAN?</h2>
     <p>
       Many machine learning systems look at some kind of complicated input (say, an image) and produce a simple output (a label like, "cat"). By contrast, the goal of a generative model is something like the opposite: take a small piece of input&mdash;perhaps a few random numbers&mdash;and produce a complex output, like an image of a realistic-looking face. A <strong>generative adversarial network (GAN)</strong> is an especially effective type of generative model, <a href="https://arxiv.org/pdf/1406.2661.pdf" title="The original paper by Goodfellow et al. published in 2014">introduced only a few years ago</a>, which has been a subject of intense interest in the machine learning community. 
@@ -446,6 +477,42 @@
       <i>IEEE Transactions on Visualization and Computer Graphics, 25(1) 
         (<a href="http://ieeevis.org/year/2018/welcome">VAST 2018</a>)</i>, 
       Jan. 2019.
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="column">
+        <img src="images/">
+        <img src="rocks.jpg">
+        <img src="falls2.jpg">
+        <img src="paris.jpg">
+
+      </div>
+      <div class="column">
+        <img src="images/high_contrast_portrait_of_a_man__by_Bob_Eggleton_S3760806062_St25_G3.png">
+        <img src="images/high_contrast_portrait_of_a_man__oil_painting__Bauhaus___S3467814340_St25_G3.png">
+        <img src="images/high_contrast_portrait_of_a_man__oil_painting__Bauhaus_S395136277_St25_G3.png">
+      </div>
+      <div class="column">
+        <img src="images/view__fantasy__varaite_S1466091250_St25_G10.2.png">
+        <img src="images/view__fantasy__varaite_S1466091251_St25_G10.2.png">
+        <img src="images/view__fantasy__varaite_S1713660060_St25_G10.2.png">
+        <img src="images/view__fantasy__varaite_S1713660062_St25_G10.2.png">
+        <img src="images/view__fantasy__varaite_S2334276332_St25_G10.2.png">
+      </div>
+      <div class="column">
+        <img src="images/view__realistic__variate__karate_S3651835869_St25_G6.6.png">
+        <img src="images/view__realistic__variate__places__people_S1904380625_St25_G6.6.png">
+        <img src="images/view__realistic__variate__places__people_S1904380626_St25_G6.6.png">
+        <img src="images/view__realistic__variate__places__people_S1904380627_St25_G6.6.png">
+        <img src="images/view__realistic__variate__places__people_S3001164888_St25_G6.6.png">
+        <img src="images/view__realistic__variate__places__people_S3001164889_St25_G6.6.png">
+        <img src="images/view__realistic__variate__places__people_S3001164890_St25_G6.6.png">
+      </div>
+      <div class="column">
+        <img src="images/view__realistic__variate_S1677588561_St25_G10.2.png">
+        <img src="images/view__realistic__variate_S1677588562_St25_G10.2.png">
+      </div>
     </div>
   </div>
 
